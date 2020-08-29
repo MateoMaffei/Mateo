@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+    color: white;
+}
+body{
+    background: #303030;
+    overflow-y: hidden;
+}
+.menu_bar{
+    display: none;
+}
+header{
+    width: 100%;
+}
+header img{
+    width:90px;
+    position: absolute;
+}
+header nav{
+    background: #c2c2c200;
+    z-index: 10000;
+    max-width: 1300px;
+    width: 95%;
+    position: fixed;
+    left: 2.5%;
+}
+header nav ul{
+    list-style: none;
+    width: 50%;
+    margin: 1px auto;
+}
+header nav ul li{
+    display: inline-block;
+    position: relative;
+    margin-right:auto;
+    /*width: 24.75%;
+    text-align:center;*/
+} 
+header nav ul li:hover{
+    background: #686868;
+}
+header nav ul li a:hover{
+    color: #c2c2c2;
+}
+header nav ul li a{
+    color:#c2c2c2;
+    text-decoration: none;
+    display: block;
+    padding:24.6px;
+}
+header nav ul li a span{
+    margin-right: 10px;
+}
+header nav ul li:hover .children{
+    display: block;
+}
+header nav ul li .children{
+    width: 120%;
+    display: none;
+    background: #c2c2c200;
+    position: absolute;
+    z-index: 1000;
+    text-align:center ;
+}
+header nav ul li .children li{
+    display: block;
+    overflow: hidden;
+    /*border-: 1px solid rgba(255,255,255,0.5);*/
+    width: 100%;
+}
+header nav ul li .children li a{
+    display: block;
+}
+header nav ul li .caret {
+    position: relative;
+    top:3px;
+}
+
+@media screen and (max-width:800px){
+    body{
+        padding-top:80px;
+    }
+    .logo{
+        display: none;
+    }
+    .menu_bar{
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background: #303030;
+    }
+
+    .menu_bar img{
+        width: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .menu_bar .bt-menu{
+        display: block;
+        padding: 20px;
+        color:#686868;
+        overflow: hidden;
+        font-size:25px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .menu_bar span{
+        float: right;
+        font-size:40px
+    }
+    .menu_bar .icon-menu{
+        color: #686868;
+    }
+    header nav{
+        width: 80%;
+        height: calc(100% - 80px);
+        position: fixed;
+        left: 100%;
+        margin: 0;
+        overflow: scroll;
+        background: #c2c2c2;
+    }
+
+    header nav ul li{
+        display: block;
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+    }
+    header nav ul li a{
+        display: block;
+        color:#303030;
+    }
+    header nav ul li:hover .children{
+        display: none;
+        background: #c2c2c2;
+    }
+
+    header nav ul li .children{
+        width: 100%;
+        position: relative;
+        color: #c2c2c2;
+    }
+    article video{
+        width: 120%;
+    }
+}
+
+
+
+
